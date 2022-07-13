@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Pizzaria da cidade</h1>
+    <p><em>Selecione</em> as alternativas </p>
+    <form action="" autocomplete="off" id="formPizza" method="POST">
+        <fieldset>
+            <legend>deixe seu pedido com a sua cara</legend>
+            <div>
+                <label for="baseMolho">Molho:
+                    <select name="baseMolho" id="baseMolho">
+                        <option value="tomate">Molho de tomate</option>
+                        <option value="azeite">Azeite (R$+1)</option>
+                        <option value="molhoBranco">Molho branco (+R$2)</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <label for="tamanhopizza">Tamanho da Pizza:
+                    <select name="tamanhopizza" id="tamanhopizza">
+                        <option value="pequena">pequena</option>
+                        <option value="medio">medio</option>
+                        <option value="grande">grande</option>
+                    </select>
+                </label>
+            </div>
+            <div>
+                <div id="recheio">
+                    <p>Recheios (+R$2 cada)</p>
+                    <label><input class="recheiopizza" type="checkbox" name="catupiry">Catupiry</label>
+                    <label><input class="recheiopizza" type="checkbox" name="cheddar">Cheddar</label>
+                    <label><input class="recheiopizza" type="checkbox" name="cebola">Cebola</label>
+                    <label><input class="recheiopizza" type="checkbox" name="catupiry">Catupiry</label>
+                </div>
+            </div>
+            <div>
+                <p>Refrigerante (6 reais cada)</p>
+                <label for="cocacola"> Coca-Cola:<input type="number" id="cocacola" value="0"></label>
+            </div>
+            <div class="pedidototal">
+                Valor Total: R$: <output name="total" id="total"></output>
+            </div>
+        </fieldset>
+    </form>
+    <button id="btnsubmit">Enviar</button>
+    <button id="btnreset">Limpar Formulario</button>
+    <script>
+
+    </script>
+
+</body>
+</html>
