@@ -51,6 +51,16 @@
     <button id="btnsubmit">Enviar</button>
     <button id="btnreset">Limpar Formulario</button>
     <script>
+      window.addEventListener("load", e => {
+        document.getElementById('formpizza').addEventListener('input',updateformtotal)
+
+        updateformtotal();
+      })
+
+      function updateformtotal () {
+        let totalItens = document.getElementById("total");
+        let valortotal = 0.0;
+      }
 
     </script>
 
